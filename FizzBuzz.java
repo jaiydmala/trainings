@@ -17,7 +17,7 @@ public class FizzBuzz {
     public Boolean checkIfContains5(int number){
 
         StringBuffer stringBuffer = new StringBuffer(String.valueOf(number));
-        if(stringBuffer.indexOf("5") > 0){
+        if(stringBuffer.indexOf("5") > -1){
             return true;
         }
         return false;
@@ -27,7 +27,7 @@ public class FizzBuzz {
     public Boolean checkIfContains3(int number){
 
         StringBuffer stringBuffer = new StringBuffer(String.valueOf(number));
-        if(stringBuffer.indexOf("3") > 0){
+        if(stringBuffer.indexOf("3") > -1){
             return true;
         }
         return false;
