@@ -14,6 +14,26 @@ public class FizzBuzz {
         return false;
     }
 
+    public Boolean checkIfContains5(int number){
+
+        StringBuffer stringBuffer = new StringBuffer(String.valueOf(number));
+        if(stringBuffer.indexOf("5") > 0){
+            return true;
+        }
+        return false;
+
+    }
+
+    public Boolean checkIfContains3(int number){
+
+        StringBuffer stringBuffer = new StringBuffer(String.valueOf(number));
+        if(stringBuffer.indexOf("3") > 0){
+            return true;
+        }
+        return false;
+
+    }
+
 
     public static void main(String[] args) {
         
