@@ -44,10 +44,13 @@ public class FizzBuzz {
             if(fz.checkDivisibilityBy3(i) && fz.checkDivisibilityBy5(i)){
                 System.out.println("FizzBuzz");
             }
-            if(fz.checkDivisibilityBy3(i)){
+            if(fz.checkIfContains3(i) && fz.checkIfContains5(i)){
+                System.out.println("FizzBuzz");
+            }
+            if(fz.checkDivisibilityBy3(i) || fz.checkIfContains3(i)){
                 System.out.println("Fizz");
             }
-            else if(fz.checkDivisibilityBy5(i)){
+            else if(fz.checkDivisibilityBy5(i) || fz.checkIfContains5(i)){
                 System.out.println("Buzz");
             }
             else{
